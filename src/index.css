@@ -3,6 +3,29 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap");
 
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #444444;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #161616;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
 body {
   font-family: "Rajdhani", sans-serif;
   margin: 0;

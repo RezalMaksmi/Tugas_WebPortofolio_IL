@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className="w-[190vh] mx-auto flex flex-row justify-between navbar z-50 fixed px-5 py-7">
       <div
-        className={`md:bg-white mx-auto shadow-xl md:border rounded-md md:px-5 md:py-3 flex flex-col md:flex-col gap-4 w-max fixed top-4 left-4 xl:left-28`}
+        className={`md:bg-white mx-auto shadow-xl md:border rounded-md md:px-3 md:py-3 flex flex-col md:flex-col gap-2 w-max fixed top-4 left-4 xl:left-28`}
       >
         <div
           className={`md:hidden flex text-xl w-[40px] h-[40px] justify-center items-center bg-white rounded-md`}
@@ -20,9 +20,9 @@ const Navbar = () => {
           X
         </div>
         <ul
-          className={` md:flex  ${
+          className={` md:flex font-semibold text-[#2a2a2a] ${
             active ? "flex bg-white rounded-md py-2 px-2 gap-2" : "hidden"
-          } flex-col md:flex-row md:gap-8`}
+          } flex-col md:flex-row md:gap-4`}
         >
           <li>
             <Link
@@ -30,11 +30,11 @@ const Navbar = () => {
               key="home"
               className={
                 pathname === "/"
-                  ? "text-orange-500 px-3"
-                  : "w-full max-[1000px]:px-3 "
+                  ? "bg-[#E9993C] px-4 py-2  rounded-md font-semibold text-[#2a2a2a]"
+                  : "px-4 "
               }
             >
-              Home
+              Me
             </Link>
           </li>
 
@@ -44,8 +44,8 @@ const Navbar = () => {
               key="about"
               className={
                 pathname === "/about"
-                  ? "text-orange-500 px-3 "
-                  : "w-full max-[1000px]:px-3 "
+                  ? "bg-[#E9993C] px-4 py-2 rounded-md font-semibold text-[#2a2a2a]"
+                  : "px-4 "
               }
             >
               About
@@ -56,8 +56,8 @@ const Navbar = () => {
               to="/portofolio"
               className={
                 pathname === "/portofolio"
-                  ? "text-orange-500 px-3 "
-                  : "w-full max-[1000px]:px-3 "
+                  ? "bg-[#E9993C] px-4 py-2 rounded-md font-semibold text-[#2a2a2a]"
+                  : "px-4 "
               }
             >
               Portofolio
