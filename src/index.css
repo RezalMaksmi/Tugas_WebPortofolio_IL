@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap");
+
+body {
+  font-family: "Rajdhani", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #191919;
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cs-education {
+  border-left: 2px solid #fff;
+  padding-left: 10px;
+  position: relative;
+}
+
+.cs-education::before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  background: #fff;
+  left: -6px;
+  position: absolute;
+}
+
+
+
+
+
+.component {
+  font-size: 30px;
+  height: 100vh;
+}
