@@ -50,7 +50,7 @@ const About = () => {
       <div
         className={`lg:w-[190vh] w-full h-full flex md:flex-row flex-col mx-auto z-50 md:items-center items-center  md:top-auto top-20 md:justify-center justify-start relative`}
       >
-        <div className="flex flex-col items-start justify-center  gap-10 h-max px-3 relative ">
+        <div className="flex flex-col items-start justify-center  gap-10 h-auto px-3 relative ">
           <div className="flex flex-col w-auto flex-grow ">
             <div className="font-bold md:gap-2 gap-1 flex flex-col text-3xl md:text-5xl [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200">
               <span className="text-[#E9993C]">My Skill</span>
@@ -67,7 +67,7 @@ const About = () => {
             variants={childVariants}
             initial="initial"
             animate="final"
-            className="text-[#fff] flex-grow flex flex-row flex-wrap gap-3 h-[50px]"
+            className="text-[#fff] flex-grow flex flex-row flex-wrap gap-3 h-auto"
           >
             <img src={html} alt="" className="object-contain" width={`50px`} />
             <img src={css} alt="" className="object-contain" width={`50px`} />
@@ -87,7 +87,7 @@ const About = () => {
         </div>
         <img
           src={dino}
-          className="w-[90%] md:w-[50%] mx-auto bottom-2 absolute md:relative"
+          className="w-[90%] md:w-[50%] mx-auto mt-8 "
           width={`40%`}
           alt=""
         />
