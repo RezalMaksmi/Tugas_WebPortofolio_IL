@@ -48,7 +48,7 @@ const About = () => {
       className="bg-[#141214] component h-full "
     >
       <div
-        className={`lg:w-[190vh] w-full h-full flex md:flex-row flex-col mx-auto z-50 md:items-center items-start  md:top-auto top-20 md:justify-center justify-start relative`}
+        className={`lg:w-[190vh] w-full h-full flex md:flex-row flex-col mx-auto z-50 md:items-center items-center  md:top-auto top-20 md:justify-center justify-start relative`}
       >
         <div className="flex flex-col items-start justify-center  gap-10 h-max px-3 relative ">
           <div className="flex flex-col w-auto flex-grow ">
@@ -87,7 +87,7 @@ const About = () => {
         </div>
         <img
           src={dino}
-          className="w-[90%] md:w-[50%] mx-auto bottom-0 absolute"
+          className="w-[90%] md:w-[50%] mx-auto bottom-2 absolute md:relative"
           width={`40%`}
           alt=""
         />

@@ -1,10 +1,11 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import contact from "../../assets/contact.svg";
 
 const Navbar = () => {
   const location = useLocation();
   const { pathname } = location;
-  const [active, setActive] = React.useState(true);
+  const [active, setActive] = React.useState(false);
   console.log(active);
 
   return (
@@ -65,7 +66,7 @@ const Navbar = () => {
         </ul>
       </div>
       <button className="bg-[#E3E3E3] text-[#2C2C2C] px-4 py-2 rounded-lg flex flex-row justify-center items-center gap-2 top-4 right-4 xl:right-28 fixed">
-        <img src="../src/assets/contact.svg" alt="" />
+        <img src={contact} alt="" />
         <span className="hidden md:contents">Contact Me</span>
       </button>
     </div>
