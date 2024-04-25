@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import sertifikatMC from "../../assets/sertifikat/sertifikatMC.jpg";
 import hactiv8 from "../../assets/sertifikat/hactiv8.png";
 import dicoding from "../../assets/sertifikat/dicoding.png";

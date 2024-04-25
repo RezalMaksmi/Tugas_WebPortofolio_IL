@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import contact from "../../assets/contact.svg";
 import { BiHome, BiMenu, BiRocket, BiUser, BiX } from "react-icons/bi";
+import CardContact from "./CardContact";
 
 const Navbar = () => {
+  const [openCard, setOpenCard] = useState(false);
+
   const location = useLocation();
   const { pathname } = location;
   const [active, setActive] = React.useState(true);
@@ -11,9 +14,9 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-center">
-      <div className="w-[190vh] mx-auto flex flex-row justify-between  z-50 fixed px-5 py-7 h-auto   ">
+      <div className="w-[190vh] mx-auto flex md:flex-row flex-col justify-between  z-50 fixed px-5 py-7 h-auto   ">
         <div
-          className={`md:bg-white mx-auto shadow-xl md:border rounded-md md:px-3 md:py-3 flex flex-col md:flex-col gap-2 w-max fixed md:top-4 left-4 md:right-auto right-[-80%] top-[50%] xl:left-28`}
+          className={`md:bg-[#E3E3E3] mx-auto shadow-xl md:border rounded-md md:p-2 flex flex-col md:flex-col gap-2 w-max fixed md:top-4 md:left-4 md:right-auto right-4 top-[50%] xl:left-28`}
         >
           <div
             className={`md:hidden flex text-xl w-[50px] h-[50px] justify-center items-center bg-[#ffffff5c] backdrop-blur-md rounded-md`}
@@ -26,7 +29,7 @@ const Navbar = () => {
             )}
           </div>
           <ul
-            className={` md:flex font-semibold text-[#2a2a2a] ${
+            className={` md:flex font-semibold md:bg-[#E3E3E3] text-[#2a2a2a] ${
               active
                 ? "flex bg-[#b6b6b672] rounded-md gap-2 backdrop-blur-md	"
                 : "hidden"
@@ -82,11 +85,15 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <button className="bg-[#E3E3E3] text-[#2C2C2C] px-4 py-2 rounded-lg flex flex-row justify-center items-center gap-2 top-4 right-4 xl:right-28 fixed">
+        <button
+          onClick={() => setOpenCard(true)}
+          className="bg-[#E3E3E3] text-[#2C2C2C] px-4 py-2 rounded-lg flex flex-row justify-center items-center gap-2 top-4 right-4 xl:right-28 fixed"
+        >
           <img src={contact} alt="" />
-          <span className="hidden md:contents">Contact Me</span>
+          <span className="hidden md:contents z-50">Contact Me</span>
         </button>
       </div>
+      <CardContact openModal={openCard} closeModal={() => setOpenCard(false)} />
     </div>
   );
 };

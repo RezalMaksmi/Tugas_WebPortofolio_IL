@@ -11,6 +11,7 @@ import news from "../../assets/portofolio/news.jpg";
 import bukapedia from "../../assets/portofolio/bukapedia.jpg";
 import belanjamudah from "../../assets/portofolio/belanjamudah.png";
 import mbkm from "../../assets/portofolio/mbkm.png";
+import mindes from "../../assets/portofolio/mindes.png";
 
 const CardPortofolio = () => {
   return (
@@ -74,7 +75,7 @@ const CardPortofolio = () => {
 
       <div className="flex flex-row bg-[#3E3E3E] rounded-lg md:p-4 p-2 gap-3 rounded-lg">
         <img
-          src={news}
+          src={mindes}
           alt=""
           className="h-[150px] min-w-[190px] rounded-lg object-cover object-top"
         />

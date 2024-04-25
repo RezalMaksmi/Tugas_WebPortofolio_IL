@@ -53,7 +53,7 @@ const Home = () => {
                 <ul className="block animate-text-slide-5 text-left leading-tight [&_li]:block">
                   <li>FrontEnd Developer</li>
                   <li>UI/UX Design</li>
-                  <li>CopyWriter</li>
+                  <li>Copywriter</li>
                   <li>FrontEnd Developer</li>
                   <li>UI/UX Design</li>
                   <li aria-hidden="true">CopyWriter</li>
@@ -64,7 +64,7 @@ const Home = () => {
               </span>
               <button
                 onClick={() => navigate("/about")}
-                className="mt-3 px-5 py-2 border rounded-md w-max text-xl font-normal text-[#DFDFDF]"
+                className="mt-3 md:px-5 md:py-2 px-4 py-2 border rounded-md w-max md:text-xl text-base font-normal text-[#DFDFDF]"
               >
                 About Me
               </button>

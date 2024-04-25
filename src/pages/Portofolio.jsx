@@ -1,19 +1,7 @@
 // import React from 'react'
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import react from "../assets/icon/icons8-react.png";
-import tailwindcss from "../assets/icon/icons8-tailwindcss.png";
-import ci from "../assets/icon/ci.png";
-import html from "../assets/icon/icons8-html.png";
-import css from "../assets/icon/icons8-css.png";
-import bootstrap from "../assets/icon/icons8-bootstrap.png";
-import laravel from "../assets/icon/laravel.png";
 
-import starflix from "../assets/portofolio/starflix.jpg";
-import news from "../assets/portofolio/news.jpg";
-import bukapedia from "../assets/portofolio/bukapedia.jpg";
-import belanjamudah from "../assets/portofolio/belanjamudah.png";
-import mbkm from "../assets/portofolio/mbkm.png";
 import CardPortofolio from "../componenents/atoms/CardPortofolio";
 import CardSertifikat from "../componenents/atoms/CardSertifikat";
 
