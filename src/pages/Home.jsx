@@ -1,7 +1,9 @@
 // import React from 'react'
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  let navigate = useNavigate();
   const routeVariants = {
     initial: {
       x: "100vh",
@@ -60,7 +62,10 @@ const Home = () => {
               <span className="md:text-xl text-base font-normal w-full">
                 Currently in Indonesia, I like learning new things.
               </span>
-              <button className="mt-3 px-5 py-2 border rounded-md w-max text-xl font-normal text-[#DFDFDF]">
+              <button
+                onClick={() => navigate("/about")}
+                className="mt-3 px-5 py-2 border rounded-md w-max text-xl font-normal text-[#DFDFDF]"
+              >
                 About Me
               </button>
             </div>
