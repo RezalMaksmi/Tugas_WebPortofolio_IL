@@ -7,11 +7,11 @@
 
 1. Lakukan clone pada repositori ini
    ```sh
-   git clone https://github.com/RezalMaksmi/mindes.git
+   git clone https://github.com/RezalMaksmi/Tugas_WebPortofolio_IL
    ```
-2. Masuk kedalam folder hacktiv8-finalproject-3.git
+2. Masuk kedalam folder Tugas_WebPortofolio_IL
    ```sh
-   cd mindes
+   cd Tugas_WebPortofolio_IL
    ```
 3. Install NPM packages
    ```sh
