@@ -1,7 +1,7 @@
 
 ## Demo Task Website Portofolio  
 
-  link : https://main--mindes.netlify.app
+  link : https://rezal.netlify.app/
 
 ## Installation
 
