@@ -11,6 +11,7 @@ import { useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Portofolio from "./pages/Portofolio";
+import Project from "./pages/Project";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function RoutesWithAnimation() {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/portofolio" element={<Portofolio />} />
+      <Route path="/client" element={<Project />} />
     </Routes>
   );
 }

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import contact from "../../assets/contact.svg";
-import { BiHome, BiMenu, BiRocket, BiUser, BiX } from "react-icons/bi";
+import { BiHome, BiMenu, BiRocket, BiStar, BiUser, BiX } from "react-icons/bi";
 import CardContact from "./CardContact";
+import { CiStar } from "react-icons/ci";
 
 const Navbar = () => {
   const [openCard, setOpenCard] = useState(false);
@@ -81,6 +82,22 @@ const Navbar = () => {
               >
                 <BiRocket className="md:hidden flex text-xl" />
                 <div className="md:flex hidden">Portofolio</div>
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/client"
+                className={`flex flex-row md:px-3 md:py-1 p-3
+                  ${
+                    pathname === "/client"
+                      ? "md:bg-none bg-[#E9993C]   rounded-md font-semibold text-[#2a2a2a]"
+                      : " "
+                  }
+                `}
+              >
+                <BiStar className="md:hidden flex text-xl" />
+                <div className="md:flex hidden">Rating</div>
               </Link>
             </li>
           </ul>
