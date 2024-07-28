@@ -1,5 +1,6 @@
 // import React from 'react'
 import { motion } from "framer-motion";
+
 import bs from "../assets/icon/icons8-bootstrap.png";
 import css from "../assets/icon/icons8-css.png";
 import html from "../assets/icon/icons8-html.png";
@@ -10,7 +11,7 @@ import tailwindcss from "../assets/icon/icons8-tailwindcss.png";
 import sass from "../assets/icon/sass.png";
 import vue from "../assets/icon/vue.png";
 import dino from "../assets/dino.gif";
-const About = () => {
+const About = ({ title, description, canonicalUrl }) => {
   const routeVariants = {
     initial: {
       x: "100vh",
@@ -63,6 +64,7 @@ const About = () => {
               </span>
             </div>
           </div>
+
           <motion.div
             variants={childVariants}
             initial="initial"
